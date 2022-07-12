@@ -6,5 +6,6 @@ def main():
 def faces(text):
     text = text.replace(':)', '🙂')
     text = text.replace(':(', '🙁')
+    return text
 
 main()
