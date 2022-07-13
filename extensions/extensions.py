@@ -4,7 +4,7 @@ name = name.strip().lower()
 
 if name.endswith('.gif')==True:
     print('image/gif')
-elif name.endswith('jpg') ==True | name.endswith('jpeg') == True:
+elif name.endswith('jpg') ==True or name.endswith('jpeg') == True:
     print('image/jpeg')
 elif  name.endswith('png') == True:
     print('image/png')
