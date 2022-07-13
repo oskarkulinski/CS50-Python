@@ -15,3 +15,4 @@ match y:
         result = x*z
     case '/':
         result = x/z
+print(result)
