@@ -3,18 +3,18 @@ name = name.strip().lower()
 x = name.length()
 type = name.removeprefix(3)
 
-match type:
-    case 'gif':
-        print('image/gif')
-    case 'jpg' | 'jpeg':
-        print('image/jpeg')
-    case  'png':
-        print('image/png')
-    case 'pdf':
-        print('application/pdf')
-    case 'txt':
-        print('text/plain')
-    case 'zip':
-        print('application/zip')
-    case _ :
-        print('application/octet-stream')
+
+if name.endswith('.gif')==True:
+    print('image/gif')
+elif name.endswith('jpg') ==True | name.endswith('jpeg') == True:
+    print('image/jpeg')
+case  name.endswith('png') == True:
+    print('image/png')
+case name.endswith('pdf')==True:
+    print('application/pdf')
+case 'txt':
+    print('text/plain')
+case 'zip':
+    print('application/zip')
+else
+    print('application/octet-stream')
