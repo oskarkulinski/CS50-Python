@@ -14,5 +14,5 @@ elif name.endswith('txt')==True:
     print('text/plain')
 elif name.endswith('zip')==True:
     print('application/zip')
-else
+else:
     print('application/octet-stream')
