@@ -1,6 +1,9 @@
 def main():
     hour = input('What time is it? ')
-    if
+    convert(hour)
+    if 7 < hour < 8:
+        print('breakfast time')
+    
 
 def convert(time):
     hr, min = time.split(sep=':')
