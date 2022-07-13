@@ -1,7 +1,7 @@
 name = input('What is the name of your file? ')
 name = name.strip().lower()
-type =''
-name,s, type = name.rpartition(sep='.')
+type =' '
+name, type = name.rsplit(sep='.', maxsplit=1)
 
 match type:
     case 'gif':
