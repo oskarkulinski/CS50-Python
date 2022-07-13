@@ -3,17 +3,17 @@ name = name.strip().lower()
 name, type = name.split(sep='.')
 
 match type:
-    case '.gif':
+    case 'gif':
         print('image/gif')
-    case '.jpg' | '.jpeg':
+    case 'jpg' | 'jpeg':
         print('image/jpeg')
-    case  '.png':
+    case  'png':
         print('image/png')
-    case '.pdf':
+    case 'pdf':
         print('application/pdf')
-    case '.txt':
+    case 'txt':
         print('text/plain')
-    case '.zip':
+    case 'zip':
         print('application/zip')
     case _ :
         print('application/octet-stream')
