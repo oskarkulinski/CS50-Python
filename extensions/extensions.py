@@ -12,9 +12,9 @@ case  name.endswith('png') == True:
     print('image/png')
 case name.endswith('pdf')==True:
     print('application/pdf')
-case 'txt':
+case name.endswith('txt')==True:
     print('text/plain')
-case 'zip':
+case name.endswith('zip')==True:
     print('application/zip')
 else
     print('application/octet-stream')
