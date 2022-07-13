@@ -1,8 +1,8 @@
 name = input('What is the name of your file? ')
 name = name.strip().lower()
-type = name.
+name, type = name.split(sep='.')
 
-match name:
+match type:
     case '.gif':
         print('image/gif')
     case '.jpg' or '.jpeg':
