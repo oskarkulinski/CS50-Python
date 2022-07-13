@@ -5,7 +5,7 @@ name, type = name.split(sep='.')
 match type:
     case '.gif':
         print('image/gif')
-    case '.jpg' or '.jpeg':
+    case '.jpg' | '.jpeg':
         print('image/jpeg')
     case  '.png':
         print('image/png')
@@ -15,3 +15,5 @@ match type:
         print('text/plain')
     case '.zip':
         print('application/zip')
+    case _ :
+        print('application/octet-stream')
