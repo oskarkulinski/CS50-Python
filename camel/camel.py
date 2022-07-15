@@ -1,6 +1,9 @@
 name = input('What is the name of your variable? ')
+y = -1
 for x in name:
     if x.islower() == False:
-        name  = '_'
+        y = x+1
+    if x == y:
+        name[x]  = '_'
 
 print (name)
