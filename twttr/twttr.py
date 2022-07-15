@@ -1,7 +1,9 @@
 text = input('What do you want to say? ')
 y = len(text) - 1
 for x in text:
-    if x !='a' or x != 'i' or x != 'o' or x != 'u':
+    if x =='a' or x != 'i' or x != 'o' or x != 'u':
+        continue
+    else:
         print(x, end = '')
 
 print('')
