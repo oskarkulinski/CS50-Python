@@ -1,6 +1,6 @@
-name = input('What is your name? ')
+name = input('What is the name of your variable? ')
 for x in name:
-    if x.islowerer() == false:
-        x + 1 == '_'
+    if x.islower() == False:
+        name[x+1]  = '_'
 
-print ('name')
+print (name)
