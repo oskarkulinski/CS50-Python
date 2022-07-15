@@ -5,3 +5,4 @@ while x > 0:
         x = x - coin
     print('Amount due:', x)
     if coin <0:
+        print('Your change is: ', -coin)
