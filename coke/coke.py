@@ -4,5 +4,5 @@ while x > 0:
     if coin == 25 or coin == 10 or coin == 5:
         x = x - coin
     print('Amount due:', x)
-    if coin <0:
-        print('Your change is: ', -coin)
+    if x <0:
+        print('Your change is: ', x)
