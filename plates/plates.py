@@ -8,14 +8,14 @@ def main():
 
 
 def is_valid(s):
-    if s.len() < 2 or s.len() > 6:
+    if len(s) < 2 or len(s) > 6:
         return False
     else:
         shortened = s.lstrip(string.ascii_letters)
-        if shortened.len() + 2 > s.len():
+        if len(shortened) + 2 > len(s):
             return False
         else:
-            if shortened.isdigit():
+            if shortened.isdigit() and shortened[0] != '0':
                 return True
             else:
                 return False
