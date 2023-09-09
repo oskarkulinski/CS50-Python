@@ -15,7 +15,7 @@ def is_valid(s):
         if len(shortened) + 2 > len(s):
             return False
         else:
-            if shortened != None and shortened.isdigit() and shortened[0] != '0':
+            if shortened != None or (shortened.isdigit() and shortened[0] != '0'):
                 return True
             else:
                 return False
