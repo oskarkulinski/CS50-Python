@@ -4,6 +4,6 @@ for x in name:
     if x.islower() == True:
         print(x, end="")
     else:
-        print("_", x.lower, end="")
+        print("_", x.lower(), end="")
 
 print()
