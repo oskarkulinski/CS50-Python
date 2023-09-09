@@ -1,10 +1,14 @@
 name = input('What is the name of your variable? ')
-y = -1
+answer = ""
+y = 0
 for x in name:
-    x = int(x)
-    if x.islower() == False:
-        y = x+1
-    if x == y:
-        name[x]  = '_'
+    if x.islower() == True:
+        answer[y] = x
+        y += 1
+    else:
+        answer[y] = '_'
+        answer[y + 1] = str(x -26)
+        y += 2
 
-print (name)
+
+print (answer)
