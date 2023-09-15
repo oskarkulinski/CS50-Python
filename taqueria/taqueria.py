@@ -12,4 +12,6 @@ menu = {
 total = 0.00
 while True:
     item = input("Item: ")
-    item.titlecase()
+    item.title()
+    total += 
+
