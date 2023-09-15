@@ -17,7 +17,8 @@ while True:
         transformed = date.split(",", 2)
     try:
         day = int(transformed[1])
-        
+    except IndexError:
+        transformed = date.split("/", 2)
     except ValueError:
         pass
     else:
