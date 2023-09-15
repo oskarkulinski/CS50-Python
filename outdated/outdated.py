@@ -21,7 +21,11 @@ while True:
         except ValueError:
             continue
         else:
-            if month
+            if month <= 0 or month > 12:
+                continue
+            else:
+                if month < 10:
+                    transformed[0] = "0" + transformed[0]
 
 
     try:
