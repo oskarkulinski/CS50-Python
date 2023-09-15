@@ -15,4 +15,7 @@ months = [
 while True:
     date = input("Date: ")
     transformed = date.split(",", 2)
-    day = int()
+    try:
+        day = int(transformed[1])
+    except ValueError:
+        
