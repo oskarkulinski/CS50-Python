@@ -8,7 +8,8 @@ while True:
     except (ValueError, ZeroDivisionError):
         pass
     else:
-        break
+        if res <= 100:
+            break
 if res >= 99:
     print("F")
 elif res <= 1:
