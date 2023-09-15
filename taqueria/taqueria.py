@@ -15,7 +15,7 @@ while True:
         item = input("Item: ")
     except EOFError:
         break
-    item.title()
+    item = item.title()
     try:
         total += menu[item]
     except KeyError:
