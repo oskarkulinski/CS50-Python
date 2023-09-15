@@ -5,6 +5,7 @@ while True:
         item = input()
     except EOFError:
         print()
+        groceries = sort
         for thing in groceries:
             print(f"{groceries[thing]} {thing}")
         break
