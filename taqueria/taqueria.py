@@ -21,5 +21,5 @@ while True:
     except KeyError:
         pass
     else:
-        print(f"Total: ${round(total, 2)}")
+        print("Total: ${total}")
 print()
