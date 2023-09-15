@@ -16,7 +16,12 @@ while True:
     date = input("Date: ")
     if  date.lfind(",") == -1:
         transformed = date.split("/", 2)
-        
+        try:
+            month = int(transformed[0])
+        except ValueError:
+            continue
+        else:
+            if month
 
 
     try:
