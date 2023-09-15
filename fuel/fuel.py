@@ -1,4 +1,6 @@
 while True:
+        frac = input("Fraction: ")
+        x = 
     try:
         x = int(input("Fraction: ")) * 100
     except ValueError:
