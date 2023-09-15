@@ -28,6 +28,7 @@ while True:
     else:
         if day > 31:
             continue
+    correct = 1
     try:
         month = int(transformed[0])
     except ValueError:
@@ -44,6 +45,6 @@ while True:
     else:
         break
 
-print(f"{transformed[2]}-{transformed[1]}-{transformed[0]}")
+print(f"{transformed[2]}-{transformed[0]}-{transformed[0]}")
 
 
