@@ -2,7 +2,7 @@ groceries = {}
 
 while True:
     try:
-        item = input("Item: ")
+        item = input()
     except EOFError:
         print()
         for thing in groceries:
