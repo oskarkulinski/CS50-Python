@@ -11,7 +11,13 @@ menu = {
 }
 total = 0.00
 while True:
-    item = input("Item: ")
+    try:
+        item = input("Item: ")
+    except EOFError:
+        break
     item.title()
-    total += 
-
+    try:
+        total += menu[item]
+    except ValueError:
+        pass
+    print(f"Total: ${total}")
