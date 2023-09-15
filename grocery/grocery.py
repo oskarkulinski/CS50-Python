@@ -4,12 +4,12 @@ while True:
     try:
         item = input("Item: ")
     except EOFError:
-        for thing in groceries
+        print()
+        for thing in groceries:
             print(f"{groceries[thing]} {thing}")
         break
     item = item.upper()
     try:
-        total += menu[item]
+        groceries[item] += 1
     except KeyError:
         groceries[item] = 0
-print()
