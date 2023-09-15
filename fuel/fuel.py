@@ -4,8 +4,7 @@ while True:
     try:
         x = int(tup[0])
         y = int(tup[2])
-        res = 100
-        res *= x/y
+        res = int(x * 100 / y)
     except (ValueError, ZeroDivisionError):
         pass
     else:
@@ -15,4 +14,4 @@ if res >= 99:
 elif res <= 1:
     print("E")
 else:
-    print(x)
+    print(f"{res}%")
