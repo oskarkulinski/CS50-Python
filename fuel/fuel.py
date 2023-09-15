@@ -4,8 +4,9 @@ while True:
     try:
         x = int(tup[0])
         y = int(tup[2])
-        res = x/y
-    except ValueError, ZeroDevisionError:
+        res = 100
+        res *= x/y
+    except (ValueError, ZeroDivisionError):
         pass
     else:
         break
