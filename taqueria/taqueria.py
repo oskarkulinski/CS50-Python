@@ -18,6 +18,7 @@ while True:
     item.title()
     try:
         total += menu[item]
-    except ValueError:
+    except KeyError:
         pass
-    print(f"Total: ${total}")
+    else:
+        print(f"Total: ${round(total, 2)}")
