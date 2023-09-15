@@ -22,3 +22,4 @@ while True:
         pass
     else:
         print(f"Total: ${round(total, 2)}")
+print()
