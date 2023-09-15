@@ -36,11 +36,12 @@ while True:
             else:
                 if day < 10:
                     transformed[1] = "0" + transformed[1]
+        break
     else
         transformed = date.split(",", 1)
         dm = transformed[0].split(" ", 1)
         try:
-            day = int(transfomred[1])
+            day = int(dm[1])
         except ValueError:
             continue
         else:
@@ -48,7 +49,7 @@ while True:
                 continue
             else:
                 if day < 10:
-                    transformed[1] = "0" + transformed[1]
+                    dm[1] = "0" + dm[1]
 
 
 
