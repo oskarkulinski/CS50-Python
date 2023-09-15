@@ -12,4 +12,5 @@ months = [
     "November",
     "December"
 ]
-date = input("Date:)
+date = input("Date: ")
+partition
