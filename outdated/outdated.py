@@ -37,7 +37,7 @@ while True:
                 correct = 1
                 break
     else:
-        if month > 0 & month <= 12:
+        if month <= 0 or month > 12:
             correct = 0
     if correct == 0:
         continue
