@@ -36,6 +36,9 @@ while True:
             else:
                 if day < 10:
                     transformed[1] = "0" + transformed[1]
+    else
+        transformed = date.split("/", 2)
+
 
 
 
