@@ -45,6 +45,6 @@ while True:
     else:
         break
 
-print(f"{transformed[2]}-{transformed[0]}-{transformed[0]}")
+print(f"{transformed[2]}-{transformed[0]}-{transformed[1]}")
 
 
