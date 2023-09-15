@@ -27,8 +27,16 @@ while True:
                 if month < 10:
                     transformed[0] = "0" + transformed[0]
         try:
-            month = int(transfomred[1])
-            
+            day = int(transfomred[1])
+        except ValueError:
+            continue
+        else:
+            if day <= 0 or day > 31:
+                continue
+            else:
+                if day < 10:
+                    transformed[1] = "0" + transformed[1]
+
 
 
     try:
