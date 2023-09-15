@@ -4,7 +4,7 @@ while True:
     try:
         x = int(tup[0])
         y = int(tup[2])
-        res = int(x * 100 / y)
+        res = int(round(x * 100 / y, 0))
     except (ValueError, ZeroDivisionError):
         pass
     else:
