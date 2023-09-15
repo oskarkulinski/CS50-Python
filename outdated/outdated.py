@@ -13,4 +13,4 @@ months = [
     "December"
 ]
 date = input("Date: ")
-date.split(",", 2)
+transformed = date.split(",", 2)
