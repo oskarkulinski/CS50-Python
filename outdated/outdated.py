@@ -27,4 +27,14 @@ while True:
             continue
     try:
         month = int(transformed[0])
-        
+    except ValueError:
+        correct = 0
+        for m in months:
+            if m == transformed[0]:
+                correct = 1
+                break
+    else:
+        if month > 0 && month <= 12:
+            correct = 0
+    if correct == 0:
+        continue
