@@ -13,4 +13,4 @@ months = [
     "December"
 ]
 date = input("Date: ")
-partition
+date.partition(",")
