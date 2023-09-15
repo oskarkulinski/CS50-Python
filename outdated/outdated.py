@@ -12,5 +12,7 @@ months = [
     "November",
     "December"
 ]
-date = input("Date: ")
-transformed = date.split(",", 2)
+while True:
+    date = input("Date: ")
+    transformed = date.split(",", 2)
+    day = int()
