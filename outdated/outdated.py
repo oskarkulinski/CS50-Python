@@ -16,7 +16,7 @@ while True:
     date = input("Date: ")
     if  date.lfind(",") == -1:
         transformed = date.split("/", 2)
-    
+        
 
 
     try:
