@@ -14,7 +14,11 @@ months = [
 ]
 while True:
     date = input("Date: ")
+    
     transformed = date.split("/", 2)
+
+
+
     try:
         day = int(transformed[1])
     except IndexError:
