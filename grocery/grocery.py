@@ -12,4 +12,4 @@ while True:
     try:
         groceries[item] += 1
     except KeyError:
-        groceries[item] = 0
+        groceries[item] = 1
