@@ -34,7 +34,13 @@ while True:
                 correct = 1
                 break
     else:
-        if month > 0 && month <= 12:
+        if month > 0 & month <= 12:
             correct = 0
     if correct == 0:
         continue
+    else:
+        break
+
+print(f"{transformed[2]}-{transformed[1]}-{transformed[0]}")
+
+
