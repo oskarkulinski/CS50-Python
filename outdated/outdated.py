@@ -38,6 +38,7 @@ while True:
                     transformed[1] = "0" + transformed[1]
     else
         transformed = date.split(",", 2)
+        
 
 
 
