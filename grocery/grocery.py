@@ -5,7 +5,7 @@ while True:
         item = input("Item: ")
     except EOFError:
         for thing in groceries
-            print(f"")
+            print(f"{groceries[thing]} {thing}")
         break
     item = item.upper()
     try:
