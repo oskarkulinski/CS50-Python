@@ -21,5 +21,5 @@ while True:
     except KeyError:
         pass
     else:
-        print("Total: ${total}")
+        print("Total: ${x:.2f}".format(x = total))
 print()
