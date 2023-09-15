@@ -39,7 +39,16 @@ while True:
     else
         transformed = date.split(",", 1)
         dm = transformed[0].split(" ", 1)
-        try
+        try:
+            day = int(transfomred[1])
+        except ValueError:
+            continue
+        else:
+            if day <= 0 or day > 31:
+                continue
+            else:
+                if day < 10:
+                    transformed[1] = "0" + transformed[1]
 
 
 
