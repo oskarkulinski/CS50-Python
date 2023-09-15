@@ -14,8 +14,15 @@ months = [
 ]
 while True:
     date = input("Date: ")
-    transformed = date.split(",", 2)
+    try:
+        transformed = date.split(",", 2)
+    except ValueError:
+        transformed = date.split("/", 2)
     try:
         day = int(transformed[1])
     except ValueError:
-        
+        pass
+    else:
+        if day > 31:
+            continue
+    
