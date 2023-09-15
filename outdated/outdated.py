@@ -25,4 +25,6 @@ while True:
     else:
         if day > 31:
             continue
-    
+    try:
+        month = int(transformed[0])
+        
