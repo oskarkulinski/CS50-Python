@@ -11,4 +11,5 @@ menu = {
 }
 total = 0.00
 while True:
-    try: item
+    item = input("Item: ")
+    
