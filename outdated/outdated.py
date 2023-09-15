@@ -14,7 +14,7 @@ months = [
 ]
 while True:
     date = input("Date: ")
-    
+    if  date.lfind()
     transformed = date.split("/", 2)
 
 
