@@ -1,10 +1,11 @@
-total = 0.00
+groceries = {}
+
 while True:
     try:
         item = input("Item: ")
     except EOFError:
         break
-    item = item.title()
+    item = item.upper()
     try:
         total += menu[item]
     except KeyError:
