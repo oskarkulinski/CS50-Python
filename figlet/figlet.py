@@ -1,9 +1,14 @@
 import sys
 from pyfiglet import Figlet
+import random
 
 text = input("Input: ")
 if len(argv) == 2:
-    try
+    if 
+    try:
+        f = Figlet(font=argv[2])
+    except ValueError:
+        sys.exit()
 
-    f = Figlet(font=fChoice)
+    print("Output: ")
     print f.renderText(text)
