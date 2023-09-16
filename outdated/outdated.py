@@ -25,7 +25,7 @@ while True:
                 continue
             else:
                 if month < 10:
-                    transformed[0] = "0" + transformed[0]
+                    transformed[0] = "0" + transformed[0].lstrip(" ")
         try:
             day = int(transformed[1])
         except ValueError:
