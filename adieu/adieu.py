@@ -8,5 +8,6 @@ while True:
     else:
         n += 1
 
+print("Adieu, adieu, to ", end="")
 if n == 1:
-    print("Adieu, adieu )
+
