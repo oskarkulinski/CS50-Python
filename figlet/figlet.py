@@ -2,7 +2,6 @@ import sys
 import pyfiglet
 import random
 
-text = input("Input: ")
 if len(sys.argv) == 2:
     if sys.argv[1] != "-f" and sys.argv[1] != "--font":
         sys.exit()
@@ -15,5 +14,6 @@ elif len(sys.argv) == 0:
 else:
     sys.exit()
 
+text = input("Input: ")
 print("Output: ")
 print(f.renderText(text))
