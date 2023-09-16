@@ -13,6 +13,6 @@ print(names[0], end = "")
 if n > 1:
     for name in names[1:-1]:
         print(",", name, end="")
-    print(" and", names[len(names) - 1])
+    print(", and", names[len(names) - 1])
 
 
