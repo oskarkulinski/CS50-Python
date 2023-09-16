@@ -10,8 +10,10 @@ if len(sys.argv) == 2:
         f = pyfiglet.Figlet(font=sys.argv[2])
     except ValueError:
         sys.exit()
-else:
+elif len(sys.argv) == 0:
     f = pyfiglet.Figlet(font=random.choice(pyfiglet.Figlet().getFonts()))
+else:
+    sys.exit()
 
 print("Output: ")
 print(f.renderText(text))
