@@ -36,6 +36,7 @@ while True:
             else:
                 if day < 10:
                     transformed[1] = "0" + transformed[1]
+        print(f"{transformed[2]}-{transformed[0]}-{transformed[1]}")
         break
     else
         transformed = date.split(",", 1)
@@ -50,6 +51,13 @@ while True:
             else:
                 if day < 10:
                     dm[1] = "0" + dm[1]
+        correct = 0
+        for m in months:
+            correct += 1
+            if m == dm[0]:
+                correct = 1
+                break
+        print(f"{transformed[2]}-{transformed[0]}-{transformed[1]}")
 
 
 
