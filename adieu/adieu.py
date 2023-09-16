@@ -9,5 +9,8 @@ while True:
         n += 1
 
 print("Adieu, adieu, to ", end="")
-if n == 1:
+print(names[0], end = "")
+if n > 1:
+    print("and ", names[1], end="")
+    
 
