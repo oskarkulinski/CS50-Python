@@ -14,7 +14,7 @@ months = [
 ]
 while True:
     date = input("Date: ")
-    if  date.lfind(",") == -1:
+    if  date.find(",") == -1:
         transformed = date.split("/", 2)
         try:
             month = int(transformed[0])
@@ -27,7 +27,7 @@ while True:
                 if month < 10:
                     transformed[0] = "0" + transformed[0]
         try:
-            day = int(transfomred[1])
+            day = int(transformed[1])
         except ValueError:
             continue
         else:
@@ -38,7 +38,7 @@ while True:
                     transformed[1] = "0" + transformed[1]
         print(f"{transformed[2]}-{transformed[0]}-{transformed[1]}")
         break
-    else
+    else:
         transformed = date.split(",", 1)
         dm = transformed[0].split(" ", 1)
         try:
@@ -56,42 +56,6 @@ while True:
             correct += 1
             if m == dm[0]:
                 break
-        print(f"{transformed[2]}-{str(correct)[0]}-{transformed[1]}")
-
-
-
-
-
-    try:
-        day = int(transformed[1])
-    except IndexError:
-        transformed = date.split(",", 2)
-        try:
-            day = int(transformed[1])
-        except ValueError:
-            continue
-    except ValueError:
-        continue
-    else:
-        if day > 31:
-            continue
-    correct = 1
-    try:
-        month = int(transformed[0])
-    except ValueError:
-        correct = 0
-        for m in months:
-            if m == transformed[0]:
-                correct = 1
-                break
-    else:
-        if month <= 0 or month > 12:
-            correct = 0
-    if correct == 0:
-        continue
-    else:
+        print(f"{transformed[1]}-{str(correct)[0]}-{dm[1]}")
         break
-
-print(f"{transformed[2]}-{transformed[0]}-{transformed[1]}")
-
 
