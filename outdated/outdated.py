@@ -36,7 +36,7 @@ while True:
             else:
                 if day < 10:
                     transformed[1] = "0" + transformed[1]
-        print(f"{transformed[2]}-{transformed[0]}-{transformed[1]}")
+        print(f"{transformed[2].rstrip(' ')}-{transformed[0]}-{transformed[1]}")
         break
     else:
         transformed = date.split(",", 1)
@@ -60,6 +60,6 @@ while True:
         if correct < 10:
             monthNumber = "0" + monthNumber
 
-        print(f"{transformed[1]}-{monthNumber}-{dm[1]}")
+        print(f"{transformed[1].rstrpi(' ')}-{monthNumber}-{dm[1]}")
         break
 
