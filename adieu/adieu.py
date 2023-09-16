@@ -15,4 +15,3 @@ if n > 1:
         print(",", name, end="")
     print(", and", names[len(names) - 1])
 
-
