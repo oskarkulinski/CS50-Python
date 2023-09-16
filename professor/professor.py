@@ -2,7 +2,9 @@ import random
 
 
 def main():
-    ...
+    n = get_level()
+    correct = 0
+    for int
 
 
 def get_level():
@@ -20,6 +22,11 @@ def generate_integer(level):
         integer = random.randomint(1, 9)
     elif level == 2:
         integer = random.randomint(10, 99)
+    elif level == 3:
+        integer = random.randomint(100, 999)
+    else:
+        raise ValueError
+    return integer
 
 if __name__ == "__main__":
     main()
