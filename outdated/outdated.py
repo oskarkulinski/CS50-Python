@@ -56,6 +56,6 @@ while True:
             correct += 1
             if m == dm[0]:
                 break
-        print(f"{transformed[1]}-{str(correct)[0]}-{dm[1]}")
+        print(f"{transformed[1]}-{str(correct)}-{dm[1]}")
         break
 
