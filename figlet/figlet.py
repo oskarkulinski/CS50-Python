@@ -2,14 +2,14 @@ import sys
 import pyfiglet
 import random
 
-if len(sys.argv) == 2:
+if len(sys.argv) == 3:
     if sys.argv[1] != "-f" and sys.argv[1] != "--font":
         sys.exit("Wrong first argument")
     try:
         f = pyfiglet.Figlet(font=sys.argv[2])
     except ValueError:
         sys.exit("This font does not exist")
-elif len(sys.argv) == 0:
+elif len(sys.argv) == 1:
     f = pyfiglet.Figlet(font=random.choice(pyfiglet.Figlet().getFonts()))
 else:
     sys.exit("Wrong amount of arguments")
