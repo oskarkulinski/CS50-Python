@@ -7,7 +7,11 @@ def main():
 
 def get_level():
     level = 0
-    while level != 1 or level != 2 or level != 3:
+    while level != 1 and level != 2 and level != 3:
+        try:
+            level = int(input("Level: "))
+        except ValueError:
+            continue
         
 
 
