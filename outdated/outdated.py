@@ -54,8 +54,12 @@ while True:
         correct = 0
         for m in months:
             correct += 1
-            if m == dm[0]:
+            if m == dm[0].title():
                 break
-        print(f"{transformed[1]}-{str(correct)}-{dm[1]}")
+        monthNumber = str(correct)
+        if correct < 10:
+            monthNumber = "0" + monthNumber
+
+        print(f"{transformed[1]}-{monthNumber}-{dm[1]}")
         break
 
