@@ -1,14 +1,17 @@
 import sys
-from pyfiglet import Figlet
+import pyfiglet
 import random
 
 text = input("Input: ")
-if len(argv) == 2:
-    if 
+if len(sys.argv) == 2:
+    if sys.argv[1] != "-f" and sys.argv[1] != "--font":
+        sys.exit()
     try:
-        f = Figlet(font=argv[2])
+        f = pyfiglet.Figlet(font=sys.argv[2])
     except ValueError:
         sys.exit()
+else:
+    f = pyfiglet.Figlet(font=random.choice(pyfiglet.getFonts()))
 
-    print("Output: ")
-    print f.renderText(text)
+print("Output: ")
+print(f.renderText(text))
