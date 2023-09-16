@@ -55,9 +55,8 @@ while True:
         for m in months:
             correct += 1
             if m == dm[0]:
-                correct = 1
                 break
-        print(f"{transformed[2]}-{transformed[0]}-{transformed[1]}")
+        print(f"{transformed[2]}-{str(correct)[0]}-{transformed[1]}")
 
 
 
