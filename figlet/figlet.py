@@ -11,7 +11,7 @@ if len(sys.argv) == 2:
     except ValueError:
         sys.exit()
 else:
-    f = pyfiglet.Figlet(font=random.choice(pyfiglet.getFonts()))
+    f = pyfiglet.Figlet(font=random.choice(pyfiglet.Figlet().getFonts()))
 
 print("Output: ")
 print(f.renderText(text))
