@@ -1,7 +1,9 @@
 import sys
 from pyfiglet import Figlet
 
+text = input("Input: ")
 if len(argv) == 2:
-    text = input("Input: ")
-    f = Figlet(font='slant')
+    try
+
+    f = Figlet(font=fChoice)
     print f.renderText(text)
