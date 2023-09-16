@@ -35,8 +35,8 @@ while True:
                 continue
             else:
                 if day < 10:
-                    transformed[1] = "0" + transformed[1]
-        print(f"{transformed[2].rstrip(' ')}-{transformed[0].lstrip(' ')}-{transformed[1]}")
+                    transformed[1] = "0" + transformed[1].lstrip(" ")
+        print(f"{transformed[2].rstrip(' ')}-{transformed[0]}-{transformed[1]}")
         break
     else:
         transformed = date.split(",", 1)
