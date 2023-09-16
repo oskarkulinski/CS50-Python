@@ -60,6 +60,6 @@ while True:
         if correct < 10:
             monthNumber = "0" + monthNumber
 
-        print(f"{transformed[1].rstrpi(' ')}-{monthNumber}-{dm[1]}")
+        print(f"{transformed[1].rstrip(' ')}-{monthNumber}-{dm[1]}")
         break
 
