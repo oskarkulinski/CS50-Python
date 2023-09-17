@@ -14,6 +14,6 @@ try:
 except requests.RequestException:
     sys.exit("Request unsuccessful")
 
-rate = (info.json()["bpi"]["USD"]["rate"])
+rate = float(info.json()["bpi"]["USD"]["rate"].replace(",",""))
 price = rate * n
 print(f"${price:,.4f}")
