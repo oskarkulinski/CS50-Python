@@ -13,5 +13,4 @@ try:
 except requests.RequestException:
     sys.exit("Request unsuccessful")
 
-info.json()
 print(info.json())
