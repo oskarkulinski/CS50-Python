@@ -4,7 +4,8 @@ import random
 def main():
     n = get_level()
     correct = 0
-    for int
+    for i in range(1,10)
+        
 
 
 def get_level():
