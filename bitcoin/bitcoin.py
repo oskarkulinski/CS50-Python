@@ -1,5 +1,6 @@
 import sys
 import requests
+import json
 
 try:
     n = float(sys.argv[1])
@@ -13,4 +14,4 @@ try:
 except requests.RequestException:
     sys.exit("Request unsuccessful")
 
-print(info.json())
+print(json.dumps(info.json(), indent=2))
