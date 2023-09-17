@@ -5,7 +5,7 @@ def main():
     n = get_level()
     correct = 0
     for i in range(1,10)
-        
+        x = g
 
 
 def get_level():
