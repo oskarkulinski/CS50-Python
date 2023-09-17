@@ -10,8 +10,15 @@ def main():
         answer = x + y
         for _ in range(1, 3)
             try:
-            guess = int(input(f"{x} + {y} = "))
-
+                guess = int(input(f"{x} + {y} = "))
+            except ValueError:
+                print("EEE")
+                continue
+            else:
+                if guess == answer:
+                    correct += 1
+                    break
+    print("Score:", correct)
 
 def get_level():
     level = 0
@@ -25,7 +32,7 @@ def get_level():
 
 def generate_integer(level):
     if level == 1:
-        integer = random.randomint(1, 9)
+        integer = random.randomint(0, 9)
     elif level == 2:
         integer = random.randomint(10, 99)
     elif level == 3:
