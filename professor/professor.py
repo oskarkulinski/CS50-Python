@@ -4,11 +4,11 @@ import random
 def main():
     n = get_level()
     correct = 0
-    for i in range(1,10)
+    for i in range(1,10):
         x = generate_integer(n)
         y = generate_integer(n)
         answer = x + y
-        for _ in range(1, 3)
+        for _ in range(1, 3):
             try:
                 guess = int(input(f"{x} + {y} = "))
             except ValueError:
@@ -32,11 +32,11 @@ def get_level():
 
 def generate_integer(level):
     if level == 1:
-        integer = random.randomint(0, 9)
+        integer = random.randint(0, 9)
     elif level == 2:
-        integer = random.randomint(10, 99)
+        integer = random.randint(10, 99)
     elif level == 3:
-        integer = random.randomint(100, 999)
+        integer = random.randint(100, 999)
     else:
         raise ValueError
     return integer
