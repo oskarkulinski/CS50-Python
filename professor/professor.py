@@ -5,7 +5,10 @@ def main():
     n = get_level()
     correct = 0
     for i in range(1,10)
-        x = g
+        x = generate_integer(n)
+        y = generate_integer(n)
+        answer = x + y
+        
 
 
 def get_level():
