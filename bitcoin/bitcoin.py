@@ -14,4 +14,6 @@ try:
 except requests.RequestException:
     sys.exit("Request unsuccessful")
 
-print(json.dumps(info.json(), indent=2))
+rate = float(info.json(){bpi}[USD][rate])
+price = rate * n
+print(f"${price:,.4f}")
