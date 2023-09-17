@@ -8,7 +8,9 @@ def main():
         x = generate_integer(n)
         y = generate_integer(n)
         answer = x + y
-        
+        for _ in range(1, 3)
+            try:
+            guess = int(input(f"{x} + {y} = "))
 
 
 def get_level():
