@@ -9,7 +9,7 @@ except ValueError:
     sys.exit("Command-line argument is not a number")
 
 try:
-    info = requests.get("https://www.coindesk.com/api/")
+    info = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
 except requests.RequestException:
     sys.exit("Request unsuccessful")
 
