@@ -20,6 +20,8 @@ def main():
                     break
                 else:
                     print("EEE")
+        if guess != answer:
+            print(answer)
     print("Score:", correct)
 
 def get_level():
