@@ -27,6 +27,9 @@ def test_is_valid_numbers():
     assert is_valid("aa111a") == False
     assert is_valid("aa1a1") == False
     assert is_valid("11") == False
+    assert is_valid("aa0111") == False
+    assert is_valid("aa001") == False
+    assert is_valid("aa111") == True
 
 if __name__ == "__main__":
     main()
