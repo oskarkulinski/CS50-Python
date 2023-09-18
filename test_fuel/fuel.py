@@ -9,12 +9,13 @@ def convert(fraction):
     try:
         x = int(tup[0])
         y = int(tup[2])
-        res = int(round(x * 100 / y, 0))
-    except (ValueError, ZeroDivisionError):
-        pass
+    except ValueError:
+        raise ValueError
     else:
-        if res <= 100:
-            break
+        if y == 0:
+            raise ZeroDivisionError
+        elif y > x:
+            raise ValueError
 
 
 def gauge(percentage):
