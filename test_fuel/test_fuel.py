@@ -16,7 +16,7 @@ def test_convert_valid():
     assert convert("1/3") == 33
 
 def test_convert_error():
-
+    assert convert("cat/dog") 
 
 
 def test_gauge():
