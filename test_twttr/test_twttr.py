@@ -19,6 +19,10 @@ def test_shorten_no_vowels():
     assert shorten("") == ""
     assert shorten("qwrtypsdfghjklzxcvbnm") == "qwrtypsdfghjklzxcvbnm"
 
+def test_shorten_nonalpha():
+    assert shorten("tw1tt3r") == "tw1tt3r"
+    assert shorten("hello, world") == "hll, wrld"
+
 
 if __name__ == "__main__":
     main()
