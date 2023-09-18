@@ -7,15 +7,19 @@ def main():
     test_gauge()
 
 
-def test_convert_valid()
-    
+def test_convert_valid():
+    assert convert("3/4") == 75
+    assert convert("1/2") == 50
+    assert convert("2/4") == 50
+    assert convert("2/2") == 100
+    assert convert("0/3") == 0
+    assert convert("1/3") == 33
+
+def test_convert_error():
 
 
-def test_convert_error()
 
-
-
-def test_gauge()
+def test_gauge():
 
 
 
