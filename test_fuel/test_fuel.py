@@ -1,9 +1,10 @@
 from fuel import convert
 from fuel import gauge
+import pytest
 
 def main():
-    test_conver_valid()
-    test_conver_error()
+    test_convert_valid()
+    test_convert_error()
     test_gauge()
 
 
@@ -16,11 +17,18 @@ def test_convert_valid():
     assert convert("1/3") == 33
 
 def test_convert_error():
-    assert convert("cat/dog") 
+    with pytest.raises(ValueError):
+        convert("cat/dog")
+        convert("5/4")
+    with pytest.raises(ZeroDivisionError):
+        convert("2/0")
 
 
 def test_gauge():
-
+    assert gauge(75) == "75%"
+    assert gauge(50) == "50%"
+    assert gauge(0) == "E"
+    assert gauge(100) == "F"
 
 
 if __name__ == "__main__":
