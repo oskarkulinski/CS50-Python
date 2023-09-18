@@ -29,6 +29,8 @@ def test_gauge():
     assert gauge(50) == "50%"
     assert gauge(0) == "E"
     assert gauge(100) == "F"
+    assert gauge(1) == "E"
+    assert gauge(99) == "F"
 
 
 if __name__ == "__main__":
