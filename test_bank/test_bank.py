@@ -13,7 +13,7 @@ def test_value_lowercase():
 def test_value_uppercase():
     assert value("Hello") == 0
     assert value("Hey") == 20
-    assert value("Hood morning") == 100
+    assert value("Good morning") == 100
     assert value("Hello, sir") == 0
 
 def test_value_blank():
