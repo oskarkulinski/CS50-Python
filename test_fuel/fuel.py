@@ -5,21 +5,25 @@ def main():
 
 
 def convert(fraction):
-    values = frac.partition("/")
-    try:
-        x = int(tup[0])
-        y = int(tup[2])
-    except ValueError:
-        raise ValueError
+    values = fraction.partition("/")
+    #if x or y isn't an integer a ValueError will happen, no need to raise it manually
+    x = int(values[0])
+    y = int(values[2])
+    if y == 0:
+         raise ZeroDivisionError
+    elif y > x:
+         raise ValueError
     else:
-        if y == 0:
-            raise ZeroDivisionError
-        elif y > x:
-            raise ValueError
+        return x * 100 / y
 
 
 def gauge(percentage):
-    ...
+    if percentage >= 99:
+        return("F")
+    elif percentage <= 1:
+        return("E")
+    else:
+        return(f"{percentage}%")
 
 
 if __name__ == "__main__":
