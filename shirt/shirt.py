@@ -1,4 +1,5 @@
 import sys
+import PIL
 
 if len(sys.argv) < 3:
     sys.exit("Too few command-line arguments")
@@ -19,4 +20,3 @@ else:
         fileIn = open(sys.argv[1], "r")
     except FileNotFoundError:
         sys.exit("Input does not exist")
-    
