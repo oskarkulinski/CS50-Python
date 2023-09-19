@@ -23,7 +23,7 @@ else:
     writer.writerow(["first", "last", "house"])
     for row in reader:
         fullName = row["name"].split(",")
-        writer.writerow([fullName[0], fullName[1], row["house"]])
+        writer.writerow([fullName[1], fullName[0], row["house"]])
 
     fileIn.close()
     fileOut.close()
