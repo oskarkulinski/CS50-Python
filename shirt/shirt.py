@@ -23,3 +23,6 @@ else:
     PIL.ImageOps.fit(photo, (100,100))
     shirt = PIL.open("shirt.png")
     shirt.paste(photo)
+    shirt.save(sys.argv[2])
+    shirt.close()
+    photo.close()
