@@ -17,6 +17,6 @@ else:
         if fileName[1] != outName[1]:
             sys.exit("Input and output have different extensions")
     try:
-        fileIn = open(sys.argv[1], "r")
+        fileIn = PIL.open(sys.argv[1], "r")
     except FileNotFoundError:
         sys.exit("Input does not exist")
