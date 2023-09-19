@@ -19,11 +19,11 @@ else:
 
     fileOut = open(sys.argv[2], "w")
     reader = csv.DictReader(fileIn)
-    writer = csv.DictWriter(fileOut, ["first", "last", "house"])
+    writer = csv.writer(fileOut)
     writer.writerow(["first", "last", "house"])
     for row in reader:
         fullName = row["name"].split(",")
-        writer.writerow({"first" : fullName[0],"last": fullName[1],"house": row["house"]})
+        writer.writerow([fullName[0], fullName[1], row["house"]])
 
     fileIn.close()
     fileOut.close()
