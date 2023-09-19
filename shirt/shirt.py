@@ -22,7 +22,7 @@ else:
     except FileNotFoundError:
         sys.exit("Input does not exist")
     shirt = PIL.Image.open("shirt.png")
-    PIL.ImageOps.fit(photo, shirt.size)
+    PIL.ImageOps.fit(shirt, shirt.size)
     photo.paste(shirt, shirt)
     photo.save(sys.argv[2])
     shirt.close()
