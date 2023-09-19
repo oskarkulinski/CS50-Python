@@ -6,9 +6,9 @@ if len(sys.argv) < 3:
 elif len(sys.argv) > 3:
     sys.exit("Too many command-line arguments")
 else:
-    fileName = sys.argv[1].split(".")
+    fileName = sys.argv[2].split(".")
     try:
-        if fileName[1].lower() != "jpg" or fileName[1].lower() != "jpeg" or fileName[1].lower() != "png":
+        if fileName[1].lower() != "jpg" and fileName[1].lower() != "jpeg" and fileName[1].lower() != "png":
             sys.exit("Invalid output")
     except IndexError:
         sys.exit("Invalid output")
