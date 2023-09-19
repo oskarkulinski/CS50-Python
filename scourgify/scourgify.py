@@ -24,7 +24,7 @@ else:
         try:
             fullName = row[0].split(",")
         except KeyError:
-            pass
+            continue
         else:
             writer.writerow([fullName[0], fullName[1], row[1]])
 
