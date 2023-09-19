@@ -21,12 +21,9 @@ else:
     reader = csv.DictReader(fileIn)
     writer = csv.DictWriter(fileOut, ["first", "last", "house"])
     for row in reader:
-        try:
-            fullName = row[0].split(",")
-        except KeyError:
-            continue
-        else:
-            writer.writerow([fullName[0], fullName[1], row[1]])
+        print(row)
+        fullName = row["name"].split(",")
+        writer.writerow([fullName[0], fullName[1], row["house"]])
 
     fileIn.close()
     fileOut.close()
