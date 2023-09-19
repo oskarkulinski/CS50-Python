@@ -8,7 +8,7 @@ elif len(sys.argv) > 3:
 else:
     fileName = sys.argv[1].split(".")
     try:
-        if fileName[1] != "jpg" or fileName[1] != "jpeg" or fileName[1] != "png":
+        if fileName[1].lower() != "jpg" or fileName[1].lower() != "jpeg" or fileName[1].lower() != "png":
             sys.exit("Invalid output")
     except IndexError:
         sys.exit("Invalid output")
