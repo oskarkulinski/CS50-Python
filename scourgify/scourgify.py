@@ -20,10 +20,10 @@ else:
     fileOut = open(sys.argv[2], "w")
     reader = csv.DictReader(fileIn)
     writer = csv.DictWriter(fileOut, ["first", "last", "house"])
+    writer.writerow(["first", "last", "house"])
     for row in reader:
-        print(row)
         fullName = row["name"].split(",")
-        writer.writerow([fullName[0], fullName[1], row["house"]])
+        writer.writerow({"first" : fullName[0],"last": fullName[1],"house": row["house"]})
 
     fileIn.close()
     fileOut.close()
