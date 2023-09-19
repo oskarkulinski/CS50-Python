@@ -21,10 +21,9 @@ else:
         photo = PIL.Image.open(sys.argv[1])
     except FileNotFoundError:
         sys.exit("Input does not exist")
-    PIL.ImageOps.fit(photo, (100,100))
     shirt = PIL.Image.open("shirt.png")
-    toSave = shirt.convert('RGBA')
-    toSave.paste(photo)
-    toSave.save(sys.argv[2])
+    PIL.ImageOps.fit(photo, shirt.size)
+    photo.paste(shirt, shirt)
+    photo.save(sys.argv[2])
     shirt.close()
     photo.close()
