@@ -17,11 +17,11 @@ else:
         if fileName[1] != outName[1]:
             sys.exit("Input and output have different extensions")
     try:
-        photo = PIL.open(sys.argv[1], "r")
+        photo = PIL.Image.open(sys.argv[1], "r")
     except FileNotFoundError:
         sys.exit("Input does not exist")
     PIL.ImageOps.fit(photo, (100,100))
-    shirt = PIL.open("shirt.png")
+    shirt = PIL.Image.open("shirt.png")
     shirt.paste(photo)
     shirt.save(sys.argv[2])
     shirt.close()
