@@ -1,5 +1,4 @@
 from working import convert
-from working import convert_hour
 import pytest
 
 
@@ -7,14 +6,20 @@ def main():
     test_errors()
     test_nominutes()
     test_minutes()
+    return 0
 
 def test_errors():
     with pytest.raises(ValueError):
         convert("cat")
+    with pytest.raises(ValueError):
         convert("9 am 5 pm")
+    with pytest.raises(ValueError):
         convert("19 AM to 5 PM")
+    with pytest.raises(ValueError):
         convert("9 AM to 15 PM")
+    with pytest.raises(ValueError):
         convert("9:60 AM to 5:40 PM")
+    with pytest.raises(ValueError):
         convert("9:59 AM to 5:75 PM")
 
 
