@@ -17,23 +17,23 @@ def convert(s):
                 #start time
 
                 result = convert_hour(1, hours)
-                result += ":" + hours.group(2) + " " + hours.group(3)
+                result += ":" + hours.group(2)
 
                 result += " to "
 
                 #finish time
 
                 result += convert_hour(4, hours)
-                result += ":" + hours.group(5) + " " + hours.group(6)
+                result += ":" + hours.group(5)
 
                 return result
         else:
             result = convert_hour(1, hours)
-            result += ":00 " + hours.group(3)
+            result += ":00"
             result += " to "
             result += convert_hour(4, hours)
-            result += ": " + hours.group(6)
-
+            result += ":00"
+            return result
     else:
         raise ValueError
 
