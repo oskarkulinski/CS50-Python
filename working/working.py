@@ -7,7 +7,10 @@ def main():
 
 
 def convert(s):
-    if matches := re.search(r"()",s)
+    if matches := re.search(r"(\d):?(\d\d)? ([AP]M) to (\d):?(\d\d)? ([AP]M)",s.strip()):
+        if
+    else:
+        raise ValueError
 
 
 ...
