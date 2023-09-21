@@ -43,7 +43,7 @@ def convert_hour(x, hours):
         result = "0" + hours.group(x)
     elif hours.group(x + 2) == "AM" and int(hours.group(x)) == 12:
         result = "00"
-    elif hours.group(x + 2) == "PM":
+    elif hours.group(x + 2) == "PM" and hours.group(x) != "12":
             result = str(int(hours.group(x)) + 12)
     else:
         result = hours.group(x)
