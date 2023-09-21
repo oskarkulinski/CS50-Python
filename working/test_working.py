@@ -11,7 +11,7 @@ def main():
 def test_errors():
     with pytest.raises(ValueError):
         convert("cat")
-        convert("9 am to 5 pm")
+        convert("9 am 5 pm")
         convert("19 AM to 5 PM")
         convert("9 AM to 15 PM")
         convert("9:60 AM to 5:40 PM")
