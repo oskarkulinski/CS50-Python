@@ -1,4 +1,4 @@
-from validator_collection import checkers
+from validator_collection import validators, checkers, errors
 
 text = input("What's your email address? ")
 
