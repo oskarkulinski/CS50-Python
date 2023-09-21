@@ -8,7 +8,9 @@ def main():
     test_minutes()
 
 def test_errors():
-    assert
+    with pytest.raises(ValueError):
+        convert(cat)
+        
 
 
 def test_nominutes():
