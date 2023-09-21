@@ -11,7 +11,7 @@ def convert(s):
         if int(hours.group(1)) > 12 or int(hours.group(4)) > 12:
             raise ValueError
         if hours.group(2) != None and hours.group(5) != None:
-            if int(hours.group(2)) > 60 or int(hours.group(5)) > 60:
+            if int(hours.group(2)) >= 60 or int(hours.group(5)) >= 60:
                 raise ValueError
             else:
                 #start time
@@ -41,6 +41,8 @@ def convert(s):
 def convert_hour(x, hours):
     if hours.group(x + 2) == "AM" and int(hours.group(x)) < 10:
         result = "0" + hours.group(x)
+    elif hours.group(x + 2) == "AM" and int(hours.group(x)) == 12:
+        result = "00"
     elif hours.group(x + 2) == "PM":
             result = str(int(hours.group(x)) + 12)
     else:
