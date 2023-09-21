@@ -8,7 +8,9 @@ def main():
 
 def convert(s):
     if matches := re.search(r"(\d):?(\d\d)? ([AP]M) to (\d):?(\d\d)? ([AP]M)",s.strip()):
-        if
+        if int(matches.group(1)) > 12 or int(matches.group(3)) > 12:
+            raise ValueError
+        elif 
     else:
         raise ValueError
 
