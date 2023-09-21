@@ -7,7 +7,7 @@ def main():
 
 
 def count(s):
-    if 
+    count = len(re.findall(r"()", s, ))
 
 
 ...
