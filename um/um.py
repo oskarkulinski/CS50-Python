@@ -7,10 +7,9 @@ def main():
 
 
 def count(s):
-    count = len(re.findall(r"()", s, ))
+    count = len(re.findall(r"[^\w](um)[^\w]", s, re.IGNORECASE))
+    return count
 
-
-...
 
 
 if __name__ == "__main__":
