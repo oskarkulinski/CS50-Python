@@ -21,6 +21,7 @@ def test_count_correct():
     assert count("Hmmmm um interesting") == 1
     assert count("um") == 1
     assert count("Lorem, um, ipsum, um, dolor, um, sit, um, amet") == 4
+    assert count("Lorem, Um, ipsum, um, dolor, Um, sit, UM, amet") == 4
 
 
 
