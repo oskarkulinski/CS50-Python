@@ -27,7 +27,7 @@ class Jar:
         else:
             self.size -=n
 
-    @capacity.setter
+
     def capacity(self, capacity):
         self._capacity = capacity
 
