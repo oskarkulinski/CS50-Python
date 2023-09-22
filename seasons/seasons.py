@@ -10,13 +10,16 @@ def main():
 
 def get_date():
     dob = input("Date of birth: ")
-    if matches = re.search(r"(\d{4}-\d{2}-\d{2})", dob):
-        return matches.group(1)
+    if matches := re.search(r"(\d{4})-(\d{2})-(\d{2})", dob):
+        return matches.groups()
     else:
         sys.exit("Invalid Date")
 
 def difference(dob):
-    
+    birthdate = date(dob[0], dob[1], dob[2])
+    currentDate = date.today()
+    difference = currentDate - birthdate
+    print(difference)
 
 
 
