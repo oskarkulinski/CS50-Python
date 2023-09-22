@@ -1,6 +1,6 @@
 from datetime import date
 import re
-
+import sys
 
 def main():
     dob = get_date()
@@ -16,7 +16,7 @@ def get_date():
         sys.exit("Invalid Date")
 
 def difference(dob):
-    birthdate = date(dob[0], dob[1], dob[2])
+    birthdate = date(int(dob[0]), int(dob[1]), int(dob[2]))
     currentDate = date.today()
     difference = currentDate - birthdate
     print(difference)
