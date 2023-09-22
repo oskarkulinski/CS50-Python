@@ -1,5 +1,8 @@
 
-
+def main():
+    j = Jar(15)
+    j.deposit(5)
+    print(j)
 
 class Jar:
     def __init__(self, capacity=12):
@@ -24,6 +27,8 @@ class Jar:
         else:
             self.size -=n
 
+    
+
     @property
     def capacity(self):
         return self.capacity
@@ -31,3 +36,7 @@ class Jar:
     @property
     def size(self):
         return self.size
+
+
+if __name__ == "__main__":
+    main()
