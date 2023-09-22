@@ -7,7 +7,7 @@ p = inflect.engine()
 
 def main():
     dob = get_date()
-    print(p.number_to_words(difference(dob)).capitalize() + " minutes")
+    print(re.sub("\sand\s", " " ,p.number_to_words(difference(dob))).capitalize() + " minutes")
 
 
 
