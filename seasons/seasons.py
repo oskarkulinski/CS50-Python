@@ -1,9 +1,13 @@
 from datetime import date
 import re
 import sys
+import inflect
+
+p = inflect.engine()
 
 def main():
     dob = get_date()
+
     print(str(difference(dob)))
 
 
