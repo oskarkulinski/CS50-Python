@@ -4,7 +4,7 @@ import sys
 
 def main():
     dob = get_date()
-    print(difference(dob))
+    print(str(difference(dob)))
 
 
 
@@ -19,7 +19,7 @@ def difference(dob):
     birthdate = date(int(dob[0]), int(dob[1]), int(dob[2]))
     currentDate = date.today()
     difference = currentDate - birthdate
-    print(difference)
+    return difference * 60
 
 
 
