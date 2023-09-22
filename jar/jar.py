@@ -9,14 +9,14 @@ class Jar:
         if int(capacity) < 0:
             raise ValueError("Capacity can't be negative")
         else:
-            self.capacity = capacity
+            self._capacity = capacity
             self.size = 0
 
     def __str__(self):
         return "🍪" * self.size
 
     def deposit(self, n):
-        if self.size + n > self.capacity:
+        if self.size + n > self._capacity:
             raise ValueError("Too many cookies")
         else:
             self.size += n
@@ -29,7 +29,7 @@ class Jar:
 
     @capacity.setter
     def capacity(self, capacity):
-        self.capacity = capacity
+        self._capacity = capacity
 
     @size.setter
     def size(self, size):
@@ -37,7 +37,7 @@ class Jar:
 
     @property
     def capacity(self):
-        return self.capacity
+        return self._capacity
 
     @property
     def size(self):
