@@ -7,8 +7,7 @@ p = inflect.engine()
 
 def main():
     dob = get_date()
-
-    print(str(difference(dob)))
+    print(p.number_to_words(difference(dob)))
 
 
 
@@ -23,7 +22,7 @@ def difference(dob):
     birthdate = date(int(dob[0]), int(dob[1]), int(dob[2]))
     currentDate = date.today()
     difference = currentDate - birthdate
-    return difference * 60
+    return int(difference.total_seconds() * 60)
 
 
 
