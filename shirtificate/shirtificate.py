@@ -7,10 +7,11 @@ def main():
 
 def make_shirt(name):
     pdf = FPDF()
+    pdf.set_page_background("shirtificate.png")
     pdf.add_page()
     pdf.set_font("ZapfDingbats", "", 16)
     pdf.cell(60, 10, "CS50 Shirtificate!", align="C")
-    pdf.image("shirtificate.png", 40, 50, 33)
+    #pdf.image("shirtificate.png", 40, 50, 33)
     pdf.cell(60, 10, f"{name.lower().title()} took CS50", align="C")
     pdf.output("shirtificate.pdf")
 
