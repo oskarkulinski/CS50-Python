@@ -12,7 +12,7 @@ def make_shirt(name):
     pdf.cell(60, 10, "CS50 Shirtificate!", align="C")
     pdf.image("shirtificate.png", 40, 50, 33)
     pdf.cell(60, 10, f"{name.lower().title()} took CS50", align="C")
-    pdf.output("shirtificate)
+    pdf.output("shirtificate.pdf")
 
 if __name__ == "__main__":
     main()
